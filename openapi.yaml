@@ -1828,6 +1828,11 @@ paths:
                 datasetId:
                   type: "string"
                   description: The Id of the Fine-Tuned Training Models.
+                instructions:
+                  type: "array"
+                  items:
+                    type: "string"
+                  description: The instructions to be passed to the AI Model. You can pass in custom instructions to the models like if you want it answer in a specific language, or you want it to answer in a specific tone. You can pass in multiple instructions at once by passing in an array of instructions.
       responses:
         '200':
           description: Success
